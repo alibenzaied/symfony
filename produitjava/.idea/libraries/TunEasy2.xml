@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TunEasy2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/TunEasy2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
