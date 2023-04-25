@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AfficherMesReclamationController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="624.0" prefWidth="1060.0" style="-fx-background-color: #DFF3FB;" styleClass="mainFxmlClass">
+         <children>
+            <Label layoutX="260.0" text="Mes Reclamation" textFill="#9c3832">
+               <font>
+                  <Font name="Arial Unicode MS" size="31.0" />
+               </font>
+            </Label>
+            <Label fx:id="imgpathttt" layoutX="533.0" layoutY="515.0" text="Label" visible="false" />
+            <Label fx:id="labelid" layoutX="761.0" layoutY="37.0" text="Label" visible="false" />
+            <TextField fx:id="inputRech" layoutX="268.0" layoutY="93.0" prefHeight="18.0" prefWidth="214.0" promptText="recherche" />
+            <TableView fx:id="tableview" layoutX="270.0" layoutY="139.0" prefHeight="362.0" prefWidth="675.0">
+               <columns>
+                  <TableColumn fx:id="date" prefWidth="177.6000213623047" text="date" />
+                  <TableColumn fx:id="type" prefWidth="130.39996337890625" text="type" />
+                  <TableColumn fx:id="etat" prefWidth="168.0" text="etat" />
+                  <TableColumn fx:id="description" prefWidth="238.39996337890625" text="description" />
+               </columns>
+            </TableView>
+            <Hyperlink fx:id="recl" layoutX="27.0" layoutY="33.0" onAction="#recl" text="Envoyer reclmation">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <TextField fx:id="description1" layoutX="18.0" layoutY="303.0" prefHeight="94.0" prefWidth="222.0" promptText="Description" />
+            <ComboBox fx:id="type1" layoutX="18.0" layoutY="243.0" prefHeight="33.0" prefWidth="222.0" promptText="type" />
+            <Button fx:id="Modifier" layoutX="249.0" layoutY="541.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="43.0" prefWidth="119.0" style="-fx-background-color: ff8c00;" text="Modifier" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Confirmer" layoutX="98.0" layoutY="543.0" mnemonicParsing="false" onAction="#Confirmer" prefHeight="40.0" prefWidth="119.0" style="-fx-background-color: #ff4500;" text="Confirmer" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="ll" layoutX="70.0" layoutY="147.0" text="Label" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
