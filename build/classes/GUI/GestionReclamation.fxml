@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GestionReclamationController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="604.0" prefWidth="1040.0" style="-fx-background-color: #DFF3FB;" styleClass="mainFxmlClass">
+         <children>
+            <Label layoutX="260.0" text="Gestion des Reclamation" textFill="#9c3832">
+               <font>
+                  <Font name="Arial Unicode MS" size="31.0" />
+               </font>
+            </Label>
+            <Button fx:id="supp" layoutX="579.0" layoutY="524.0" mnemonicParsing="false" onAction="#supp" prefHeight="40.0" prefWidth="119.0" style="-fx-background-color: #ff4500;" text="Supprimer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Ajouter" layoutX="422.0" layoutY="522.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="43.0" prefWidth="119.0" style="-fx-background-color: ff8c00;" text="Répondre" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="imgpathttt" layoutX="533.0" layoutY="515.0" text="Label" visible="false" />
+            <Label fx:id="labelid" layoutX="761.0" layoutY="37.0" text="Label" visible="false" />
+            <TextField fx:id="inputRech" layoutX="268.0" layoutY="93.0" prefHeight="18.0" prefWidth="214.0" promptText="recherche" />
+            <Hyperlink fx:id="response" layoutX="27.0" layoutY="33.0" onAction="#response" text="response">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Button fx:id="afficherpardate" layoutX="679.0" layoutY="58.0" mnemonicParsing="false" onAction="#afficherpardate" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #296d98;" styleClass="button_Submit" text="Afficher par date" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="pdf2" layoutX="595.0" layoutY="59.0" mnemonicParsing="false" onAction="#pdf2" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: #FF0000;" styleClass="button_Submit" text="PDF" textFill="WHITE">
+               <font>
+                  <Font name="Lato Black" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="afficherpartype" layoutX="679.0" layoutY="93.0" mnemonicParsing="false" onAction="#afficherpartype" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #296d98;" styleClass="button_Submit" text="Afficher par type" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="supp1" layoutX="178.0" layoutY="524.0" mnemonicParsing="false" onAction="#refuserReclamation" prefHeight="26.0" prefWidth="59.0" style="-fx-background-color: #ff4500;" text="Ref" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="AccepterReclamation" layoutX="87.0" layoutY="524.0" mnemonicParsing="false" onAction="#AccepterReclamation" prefHeight="40.0" prefWidth="59.0" style="-fx-background-color: #296d98;" styleClass="button_Submit" text="Acc" textFill="WHITE">
+               <font>
+                  <Font name="Lato Bold" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tableview" layoutX="65.0" layoutY="141.0" prefHeight="363.0" prefWidth="714.0">
+               <columns>
+                  <TableColumn fx:id="date" prefWidth="177.6000213623047" text="date" />
+                  <TableColumn fx:id="type" prefWidth="130.39996337890625" text="type" />
+                  <TableColumn fx:id="etat" prefWidth="119.199951171875" text="etat" />
+                  <TableColumn fx:id="description" minWidth="0.0" prefWidth="152.800048828125" text="description" />
+                  <TableColumn fx:id="user" prefWidth="131.99997558593748" text="user" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

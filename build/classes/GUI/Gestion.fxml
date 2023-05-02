@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GestionController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutY="55.0" prefHeight="465.0" prefWidth="164.0" style="-fx-background-color: #08576D;">
+         <children>
+            <Hyperlink fx:id="f" layoutX="14.0" layoutY="157.0" onAction="#f" text="Produits" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="b" layoutX="17.0" layoutY="75.0" onAction="#b" text="reclamation" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="f1" layoutX="14.0" layoutY="313.0" onAction="#u" text="Users" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="f2" layoutX="14.0" layoutY="237.0" onAction="#c" text="Categories" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="f11" layoutX="17.0" layoutY="386.0" onAction="#co" text="Panier" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="25.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="recl" layoutX="163.0" layoutY="-1.0" prefHeight="614.0" prefWidth="764.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PanierControllerController">
+   <children>
+      <TextField fx:id="txtid" />
+      <ImageView fitHeight="584.0" fitWidth="791.0" pickOnBounds="true">
+         <image>
+            <Image url="@Images/gettyimages-1358321288-640x640.jpg" />
+         </image></ImageView>
+      <AnchorPane layoutX="35.0" layoutY="32.0" prefHeight="516.0" prefWidth="726.0">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/preloader.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="691.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/preloader.gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="195.0" text="Quantity_Panier" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="125.0" prefHeight="20.0" prefWidth="75.0" text="Nom_Panier" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtQuantite" layoutX="12.0" layoutY="222.0" />
+            <TextField fx:id="txtNom" layoutX="14.0" layoutY="148.0" />
+            <AnchorPane fx:id="Capture" layoutX="166.0" layoutY="89.0" prefHeight="416.0" prefWidth="431.0">
+               <children>
+                  <TableView fx:id="TablePanier" layoutX="11.0" layoutY="12.0" onMouseClicked="#onTableItemSelect" prefHeight="398.0" prefWidth="344.0">
+                    <columns>
+                      <TableColumn fx:id="IdPanier" minWidth="0.0" prefWidth="0.0" text="IdPanier" />
+                      <TableColumn fx:id="NomPanier" prefWidth="170.4000244140625" text="Nom produit" />
+                        <TableColumn fx:id="QuantitePanier" prefWidth="173.5999755859375" text="QuantitePanier" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="btnAjout" layoutX="14.0" layoutY="319.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="35.0" prefWidth="134.0" style="-fx-background-color: #dd17b2;" text="Ajouter" />
+            <Button fx:id="btnUpdate" layoutX="14.0" layoutY="390.0" mnemonicParsing="false" onAction="#update" prefHeight="35.0" prefWidth="134.0" style="-fx-background-color: #dd17b2;" text="Update" />
+            <Button fx:id="btnDelete" layoutX="14.0" layoutY="455.0" mnemonicParsing="false" onAction="#delete" prefHeight="35.0" prefWidth="134.0" style="-fx-background-color: #dd17b2;" text="Delete" />
+            <TextField fx:id="txtrecherche" layoutX="36.0" layoutY="63.0" prefHeight="26.0" prefWidth="442.0" promptText="Search" />
+            <ComboBox fx:id="combo" layoutX="506.0" layoutY="63.0" onAction="#triCoice" prefHeight="26.0" prefWidth="89.0" promptText="Trie" />
+            <Button fx:id="btnCommande" layoutX="622.0" layoutY="135.0" mnemonicParsing="false" onAction="#commander" prefHeight="45.0" prefWidth="98.0" style="-fx-background-color: #dd17b2;" text="Commander" />
+            <Button fx:id="btnImprimer" layoutX="612.0" layoutY="455.0" mnemonicParsing="false" onAction="#Imprimer" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #dd17b2;" text="Imprimer" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
